@@ -4,11 +4,12 @@ public class Agenda {
     int[] telefonos;
     int siguiente = 0;
 
-    public Agenda(int tam) {
-        nombres = new String[tam];
-        telefonos = new int[tam];
+    public Agenda(int tamanio) {
+        nombres = new String[tamanio];
+        telefonos = new int[tamanio];
+        
     }
-
+    
     public boolean añadir(String nom, int tlf) {
         if (siguiente >= nombres.length || siguiente >= telefonos.length) {
             return false;
