@@ -7,6 +7,7 @@ public class Agenda {
     public Agenda(int tamanio) {
         nombres = new String[tamanio];
         telefonos = new int[tamanio];
+        
     }
     
     public boolean añadir(String nom, int tlf) {
